@@ -1,0 +1,195 @@
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /* background-color: #D8F3DC; */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: green;     */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    /* background-color: #ff6347; */
+    /* color: white; */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    /* color: #2D6A4F; */
+    color: #45a049;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+
+/* Upload Form Section **************************************/
+.upload-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.upload-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-left: 3rem;
+    color: #555856;
+}
+
+.upload-form div {
+    margin-bottom: 15px;
+}
+
+.upload-form label {
+    font-size: 1.1rem;
+    /* display: block; */
+    margin-bottom: 5px;
+}
+
+#file-upload-container{
+    /* background-color: red; */
+    padding: 4px;
+}
+#file-upload-container input{
+    border: 2px dashed #40916C;
+    width: 87%;
+    height: 30vh;
+    display: block;
+    margin: auto;
+    background-color: #edf2ed;
+}
+
+.time-container{
+    /* background-color: rgb(248, 246, 246); */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+
+}
+
+.upload-form input {
+    width: 22rem;
+    /* margin: 4px; */
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    padding: 8px;
+   
+
+}
+
+.upload-form button {
+    width: 89%;
+    padding: 13px;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    /* background-color: #4CAF50; */
+    /* background-color: #2D6A4F; */
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.upload-form button:hover {
+    background-color: #45a049;
+}
+
+
+/* Instructions Section **********************************/
+.instructions {
+    width: 73%;
+    margin: auto;
+    margin-top: 40px;   
+    padding: 10px;
+    /* background-color: #ffffff; */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.instructions h2 {
+    font-size: 1.8rem;
+    color: #555856  ;
+}
+
+.instructions p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Button hover effect -----------------------------------*/
+.btn:hover {
+    background-color: #0056b3; /* Darker shade of blue */
+    color: #fff; /* White text */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Image hover effect */
+.thumbnail img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Thumbnail caption hover */
+.thumbnail .caption:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light overlay effect */
+    transition: background-color 0.3s ease;
+}
+
+/* Form input hover */
+.form-control:hover {
+    border-color: #007bff; /* Blue border */
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); /* Subtle glow */
+}
+
+/* Header text hover effect */
+/* h1:hover {
+    color: #007bff; /* Change header text color */
+    /* transition: color 0.3s ease-in-out; */
+/* } */
+

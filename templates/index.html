@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to GIF Converter</title>
+    
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    
+    <!-- Optional Bootstrap JS and jQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h1>Welcome Video to GIF Converter!</h1>
+            <p>Transform your video clips into animated GIFs in just a few easy steps.</p>
+        </header>
+        
+        
+        <section class="upload-form">
+            <h2 class="text-center">Upload Your Video</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <div class="form-group" id="file-upload-container">
+                    <!-- <label for="video">Select Video:</label> -->
+                    <input type="file" class="form-control" name="video" accept="video/*" required>
+                </div>
+
+                <div class="time-container">
+                    <div class="form-group">
+                        <!-- <label for="start_time">Start Time (seconds):</label> -->
+                        <input type="number" class="form-control" placeholder="Enter Start time (seconds)" name="start_time" required>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="end_time">End Time (seconds):</label> -->
+                        <input type="number" class="form-control" placeholder="Enter End time (seconds)" name="end_time" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Create GIF</button>
+            </form>
+        </section>
+
+        <!-- How it works -------------------------- -->
+        <section class="instructions">
+            <h2 class="text-center">How It Works</h2>
+            <p class="lead text-center">Simply upload a video, specify the start and end time for the GIF, and we'll convert it for you!</p>
+        </section>
+        
+        <!-- <footer class="text-center">
+            <p>&copy; 2024 Video to GIF Converter. All rights reserved.</p>
+        </footer> -->
+    </div>
+</body>
+</html>
